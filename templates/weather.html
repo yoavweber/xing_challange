@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+        <h1>The hottest city</h1>
+        <h2>submit 5 city's and get the hottest one</h2>
+        <form method="post">
+            <input type="text" name='city1' id="city1">
+            <!-- <input type="text" name='city2' id="city2">
+            <input type="text" name='city3' id="city3">
+            <input type="text" name='city4' id="city4">
+            <input type="text" name='city5' id="city5"> -->
+            <input type="submit">
+        </form>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+                <h4 class ='flash'>{{ message }}</h4>
+            {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </main>
+    
+</body>
+</html>
