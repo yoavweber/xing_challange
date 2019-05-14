@@ -14,13 +14,6 @@
             <input type="text" name='city' id="city">
             <input type="submit">
         </form>
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            {% for message in messages %}
-                <h4 class ='flash'>{{ message }}</h4>
-            {% endfor %}
-            {% endif %}
-        {% endwith %}
     </main>
     
 </body>

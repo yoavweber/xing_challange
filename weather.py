@@ -10,7 +10,6 @@ app = Flask(__name__)
 app.secret_key = 'test_key'
 
 
-
 @app.route('/', methods=('GET'))
 def hello_world():
     if request.method == 'GET':
@@ -23,9 +22,6 @@ def hello_world():
             hottest_city = highest_temp_dic[hottest_temp]
             return '<b>{}</b> is the hottest city with <b>{}<b> degrees'.format(hottest_city,hottest_temp)
             
-         
-        
-        
      
   
     return render_template('weather.html')
